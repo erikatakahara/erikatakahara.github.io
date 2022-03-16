@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Over reading test</title>
+</head>
+<body>
+    <h1>Time</h1>
+    <!-- VO Desktop: two thousand eleven eleven -->
+    <!-- TalkBack: two thousand eleven - eleven -->
+    <time datetime="2011-11-18T14:54:00.000">2011-11</time>
+    <br />
+    <!-- VO Desktop: November eighteen two thousand eleven -->
+    <!-- TalkBack: The eightheen november two thousand eleven -->
+    <time datetime="2011-11-18T14:54:00.000">2011-11-18</time>
+    <br />
+    <!-- VO Desktop: November eighteen two thousand eleven -->
+    <time datetime="2011-11-18T14:54:39.929">2011-11-18</time>
+    <!-- VO Desktop: fourteen fifity four -->
+    <!-- TalkBack: fourteen fifity four -->
+    <time datetime="2011-11-18T14:54:39.929">14:54</time>
+    <br />
+    <!-- VO Desktop: November eighteen two thousand eleven -->
+    <!-- TalkBack: The eightheen november two thousand eleven -->
+    <p>2011-11-18</p>
+    <!-- VO Desktop: fourteen fifity four  -->
+    <!-- TalkBack: fourteen fifity four -->
+    <p>14:54</p>
+    <!-- VO Desktop: November eighteen two thousand eleven fourteen fifity four  -->
+    <!-- TalkBack: The eightheen november two thousand eleven fourteen fifity four -->
+    <p>2011-11-18 14:54</p>
+    <!-- VO Desktop: two thousand eleven slash eleven slash eighteen  fourteen fifity four  -->
+    <!-- TalkBack: The eightheen november two thousand eleven fourteen fifity four -->
+    <p>2011/11/18 14:54</p>
+    <!-- VO Desktop: November eighteen two thousand eleven fourteen fifity four, group  -->
+    <!-- TalkBack: The eightheen november two thousand eleven fourteen fifity four -->
+    <p aria-label="2011-11-18 14:54">2011/11/18 14:54</p>
+    <!-- VO Desktop: November eighteen two thousand eleven fourteen fifity four, timer, group  -->
+    <!-- TalkBack: The eightheen november two thousand eleven fourteen fifity four, timer -->
+    <p role="timer" aria-label="2011-11-18 14:54">2011/11/18 14:54</p>
+
+    <span aria-label="Friday, November 18, 2011 at 2:54 PM">2011/11/18 14:54</span>
+</body>
+</html>
