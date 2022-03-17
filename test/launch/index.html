@@ -18,12 +18,25 @@
   </head>
   <body>
     <button id="launch">Open page</button>
+    <button id="launch2">Open page</button>
+  <iframe id="l" width="1" height="1" style="visibility:hidden"></iframe>
     <script>
       const button = document.getElementById("launch");
       button.addEventListener("click", () => {
         window.location.href = "https://www.mercari.com/jp/launch";
         setTimeout(() => {
           window.location.href = "https://jp.mercari.com/";
+        }, 500);
+      });
+      const button2 = document.getElementById("launch2");
+
+      button2.addEventListener('click', () => {
+        // Deep link to your app goes here
+        document.getElementById("l").src = "https://www.mercari.com/jp/launch";
+
+        setTimeout(function() {
+            // Link to the App Store should go here -- only fires if deep link fails                
+            window.location = "https://jp.mercari.com/";
         }, 500);
       });
     </script>
